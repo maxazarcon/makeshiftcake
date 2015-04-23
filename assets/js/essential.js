@@ -17,9 +17,9 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 	
 	$('a').click(function() {
-		var divname = this.name;
+		var divname = this.attr('id');
 
-		$("#" + divname).show().siblings().hide();
+		$("#" + divname + "Page").show().siblings().hide();
 	});
 });
 
