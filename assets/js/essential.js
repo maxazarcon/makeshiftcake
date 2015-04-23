@@ -19,10 +19,7 @@ $(document).ready(function() {
 
 $(function() {
 	$("#homeNav").click(function() {
-		var divname = this.attr('id');
-
 		alert("click");
-		$("#" + divname + "Page").show("slow").siblings().hide("slow");
 	});
 });
 // Set copyright year ------------------------------------------
