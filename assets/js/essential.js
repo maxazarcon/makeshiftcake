@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$("#rulesPage").load("pages/rules.html");
 	$("#staffPage").load("pages/staff.html");
 	
-	$('a').click(function() {
+	$('div.navbutton').click(function() {
 		var divname = this.id;
 		
 		alert(divname);
