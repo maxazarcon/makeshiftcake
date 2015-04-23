@@ -17,10 +17,8 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 });
 
-$(function() {
-	$("#homeNav").click(function() {
-		alert("click");
-	});
+$("#homeNav").click(function() {
+	alert("click");
 });
 // Set copyright year ------------------------------------------
 
