@@ -20,7 +20,7 @@ $(document).ready(function() {
 $("div").click(function() {
 	var divname = this.attr('id');
 
-	alert(this.id);
+	alert(this.attr("id"));
 	$("#" + divname + "Page").show("slow").siblings().hide("slow");
 });
 
