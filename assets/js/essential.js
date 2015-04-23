@@ -18,7 +18,8 @@ $(document).ready(function() {
 	
 	$('a').click(function() {
 		var divname = this.id;
-
+		
+		alert(divname);
 		$("#" + divname + "Page").show("slow").siblings().hide("slow");
 	});
 });
