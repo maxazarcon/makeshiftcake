@@ -17,8 +17,8 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 });
 
-function pageLoader(){
-	var navId = this.id;
+function pageLoader(div){
+	var navId = div.id;
 	
 	alert(navId);
 	$("#" + navId + "Page").show().siblings().hide();
