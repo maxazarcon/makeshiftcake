@@ -1,13 +1,13 @@
 // Load navbar -----------------------------------------
 
-$(document).ready(function(){
+$(document).ready(function() {
 	$("#navbar").load("widgets/navbar.html");
 });
 
 // Load elements ------------------------------------------
 
 $(document).ready(function() {
-	
+
 	$("aboutPage").load("pages/about.html");
 	$("#contactPage").load("pages/contact.html");
 	$("#donatePage").load("pages/donate.html");
@@ -15,19 +15,19 @@ $(document).ready(function() {
 	$("#ranksPage").load("pages/ranks.html");
 	$("#rulesPage").load("pages/rules.html");
 	$("#staffPage").load("pages/staff.html");
-	
-	$('div.navbutton').click(function() {
-		var divname = this.attr('id');
-		
-		alert(this.id);
-		$("#" + divname + "Page").show("slow").siblings().hide("slow");
-	});
+});
+
+$('div.navbutton').click(function() {
+	var divname = this.attr('id');
+
+	alert(this.id);
+	$("#" + divname + "Page").show("slow").siblings().hide("slow");
 });
 
 // Set copyright year ------------------------------------------
 
-$(document).ready(function(){
+$(document).ready(function() {
 	var currentYear = (new Date).getFullYear();
-	
+
 	$("#currentYear").text(currentYear);
 });
