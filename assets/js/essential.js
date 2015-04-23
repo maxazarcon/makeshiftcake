@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-	$("aboutPage").load("pages/about.html");
+	$("#aboutPage").load("pages/about.html");
 	$("#contactPage").load("pages/contact.html");
 	$("#donatePage").load("pages/donate.html");
 	$("#homePage").load("pages/home.html");
@@ -17,12 +17,11 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 });
 
-function pageLoader(div){
+function pageLoader(div) {
 	var navId = div.id;
 
 	$("#" + navId + "Page").show().siblings().hide();
 }
-
 
 // Set copyright year ------------------------------------------
 
