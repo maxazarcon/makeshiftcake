@@ -17,7 +17,7 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 });
 
-$('div.navbutton').click(function() {
+$("div").click(function() {
 	var divname = this.attr('id');
 
 	alert(this.id);
