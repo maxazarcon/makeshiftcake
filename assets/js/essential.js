@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$('a').click(function() {
 		var divname = this.attr('id');
 
-		$("#" + divname + "Page").show().siblings().hide();
+		$("#" + divname + "Page").show("slow").siblings().hide("slow");
 	});
 });
 
