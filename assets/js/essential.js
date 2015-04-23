@@ -17,13 +17,14 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 });
 
-$("#homeNav").click(function() {
-	var divname = this.attr('id');
+$(function() {
+	$("#homeNav").click(function() {
+		var divname = this.attr('id');
 
-	alert("click");
-	$("#" + divname + "Page").show("slow").siblings().hide("slow");
+		alert("click");
+		$("#" + divname + "Page").show("slow").siblings().hide("slow");
+	});
 });
-
 // Set copyright year ------------------------------------------
 
 $(document).ready(function() {
