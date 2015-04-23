@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$('div.navbutton').click(function() {
 		var divname = this.attr('id');
 		
-		alert(divname);
+		alert(this.id);
 		$("#" + divname + "Page").show("slow").siblings().hide("slow");
 	});
 });
