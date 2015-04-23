@@ -2,6 +2,9 @@
 
 $(document).ready(function() {
 	$("#navbar").load("widgets/navbar.html");
+	$("#home").click(function(){
+		alert("click");
+	});
 });
 
 // Load elements ------------------------------------------
@@ -17,9 +20,7 @@ $(document).ready(function() {
 	$("#staffPage").load("pages/staff.html");
 });
 
-$("#footer").click(function() {
-	alert("click");
-});
+
 // Set copyright year ------------------------------------------
 
 $(document).ready(function() {
