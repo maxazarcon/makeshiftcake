@@ -20,7 +20,7 @@ $(document).ready(function() {
 function pageLoader(){
 	var navId = this.id;
 	
-	alert("click");
+	alert(navId);
 	$("#" + navId + "Page").show().siblings().hide();
 }
 
