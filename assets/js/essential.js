@@ -2,9 +2,6 @@
 
 $(document).ready(function() {
 	$("#navbar").load("widgets/navbar.html");
-	$("#home").click(function(){
-		alert("click");
-	});
 });
 
 // Load elements ------------------------------------------
@@ -19,6 +16,13 @@ $(document).ready(function() {
 	$("#rulesPage").load("pages/rules.html");
 	$("#staffPage").load("pages/staff.html");
 });
+
+function pageLoader(){
+	var navId = this.id;
+	
+	alert("click");
+	$("#" + navId + "Page").show().siblings().hide();
+}
 
 
 // Set copyright year ------------------------------------------
