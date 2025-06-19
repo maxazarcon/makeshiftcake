@@ -52,46 +52,46 @@ body {
 	width:100px;
 	display:block;
 }
-#home {
+#home-btn {
 	background-image:url(../images/nav/home.png);
 }
-#home:hover {
+#home-btn:hover {
 	background-image:url(../images/hover/home.png);
 }
-#ranks {
+#ranks-btn {
 	background-image:url(../images/nav/ranks.png);
 }
-#ranks:hover {
+#ranks-btn:hover {
 	background-image:url(../images/hover/ranks.png);
 }
-#rules{
+#rules-btn {
 	background-image:url(../images/nav/rules.png);
 }
-#rules:hover {
+#rules-btn:hover {
 	background-image:url(../images/hover/rules.png);
 }
-#donate{
+#donate-btn {
 	background-image:url(../images/nav/donate.png);
 }
-#donate:hover{
+#donate-btn:hover {
 	background-image:url(../images/hover/donate.png);
 }
-#staff{
+#staff-btn {
 	background-image:url(../images/nav/staff.png);
 }
-#staff:hover{
+#staff-btn:hover {
 	background-image:url(../images/hover/staff.png);
 }
-#about{
+#about-btn {
 	background-image:url(../images/nav/about.png);
 }
-#about:hover{
+#about-btn:hover {
 	background-image:url(../images/hover/about.png);
 }
-#contact{
+#contact-btn {
 	background-image:url(../images/nav/contact.png);
 }
-#contact:hover{
+#contact-btn:hover {
 	background-image:url(../images/hover/contact.png);
 }
 
