@@ -1,5 +1,6 @@
 // Essential JavaScript for MakeshiftCake
 $(document).ready(function(){
+	$.ajaxSetup({ cache: false }); // Prevent AJAX caching
 	console.log("Document ready, initializing MakeshiftCake...");
 	
 	// Set copyright year
@@ -26,6 +27,7 @@ $(document).ready(function(){
 		} else {
 			console.log("Home page loaded successfully");
 			$("#home.page").show();
+			console.log("Home page HTML after load:", $("#home.page").html());
 			// Fallback: if still empty, show a message
 			if (!$("#home.page").html().trim()) {
 				$("#home.page").html("<p>Home page is empty.</p>");
