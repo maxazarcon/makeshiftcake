@@ -18,49 +18,26 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Hide all pages first, then load and show home
-	$('.page').hide();
-	$("#home.page").load("pages/home.html", function(response, status, xhr) {
-		if (status == "error") {
-			console.error("Error loading home page:", xhr.status, xhr.statusText);
-			$("#home.page").html("<p>Home page failed to load</p>");
-		} else {
-			console.log("Home page loaded successfully");
-			$("#home.page").show();
-			console.log("Home page HTML after load:", $("#home.page").html());
-			// Fallback: if still empty, show a message
-			if (!$("#home.page").html().trim()) {
-				$("#home.page").html("<p>Home page is empty.</p>");
-			}
-		}
-	});
-	
-	// Use event delegation for dynamically loaded content
+	// Navigation logic: show/hide pages
 	$(document).on('click', 'a[name]', function(e) {
 		e.preventDefault();
 		var divname = this.name;
-		console.log("Navigation clicked:", divname);
-		
+
 		// Special handling for staff page interactions
 		if (divname.startsWith('div')) {
 			console.log("Showing staff profile:", divname);
 			$('.staffpage').hide();
-			$('#' + divname).show();
+			$('#' + divname).fadeIn();
 			return;
 		}
-		
-		// Regular page navigation
-		$('.page').hide();
-		
-		// Load and show the selected page into the correct .page div
-		$("#" + divname + ".page").load("pages/" + divname + ".html", function(response, status, xhr) {
-			if (status == "error") {
-				console.error("Error loading page:", xhr.status, xhr.statusText);
-				$("#" + divname + ".page").html("<p>Page failed to load</p>");
-			} else {
-				console.log("Page loaded successfully:", divname);
-			}
-			$("#" + divname + ".page").show();
+
+		// Hide all pages, then show the selected one with fadeIn
+		$('.page').fadeOut(150, function() {
+			$('#' + divname + '.page').fadeIn(150);
 		});
 	});
+
+	// Ensure only home is visible on load
+	$('.page').hide();
+	$('#home.page').show();
 });
