@@ -17,6 +17,15 @@ $(document).ready(function(){
 		e.preventDefault();
 		var divname = this.name;
 		
+		// Special handling for staff page interactions
+		if (divname.startsWith('div')) {
+			// This is a staff member profile link
+			$('.staffpage').hide();
+			$('#' + divname).show();
+			return;
+		}
+		
+		// Regular page navigation
 		// Hide all pages first
 		$('.page').hide();
 		
