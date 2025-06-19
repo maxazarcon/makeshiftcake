@@ -123,17 +123,14 @@ body {
 	width:100%;
 	height:35px;
 }
-#mainbody{
-	margin:auto;
-	margin-top:40px;
-	margin-bottom:40px;
-	padding-top:75px;
-	height:801px;
-	width:650px;
-	background-image:url(/images/frame.png);
+#mainbody {
+	width: 650px;
+	height: 801px;
+	margin: auto;
+	background-image: url(/images/frame.png);
 	background-size: contain;
-	background-repeat:no-repeat;
-	z-index: 0;
+	background-repeat: no-repeat;
+	position: relative;
 }
 .stafflink {
 	text-align:center;
@@ -165,19 +162,31 @@ body {
 	border-bottom-right-radius:15px;
 	clear: both;
 }
-#page{
-	margin-left: 77px;
-	margin-right: 80px;
+#page {
+	width: 500px;
 	height: 540px;
-	width:500px;
-	padding: 20px;
-	background-image:url(/images/page.png);
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(/images/page.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
 }
 .page {
+	width: 100%;
+	height: 100%;
+	background: none;
+	padding: 20px;
+	box-sizing: border-box;
 	display: none;
+}
+.page[style*="display: block"] {
+	display: block;
 }
 .menu {
 	margin-bottom: 20px;
