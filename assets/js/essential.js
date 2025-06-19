@@ -17,11 +17,11 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Load initial home page content
-	$("#home").load("pages/home.html", function(response, status, xhr) {
+	// Load initial home page content into the correct .page div
+	$("#home.page").load("pages/home.html", function(response, status, xhr) {
 		if (status == "error") {
 			console.error("Error loading home page:", xhr.status, xhr.statusText);
-			$("#home").html("<p>Home page failed to load</p>");
+			$("#home.page").html("<p>Home page failed to load</p>");
 		} else {
 			console.log("Home page loaded successfully");
 		}
@@ -35,7 +35,6 @@ $(document).ready(function(){
 		
 		// Special handling for staff page interactions
 		if (divname.startsWith('div')) {
-			// This is a staff member profile link
 			console.log("Showing staff profile:", divname);
 			$('.staffpage').hide();
 			$('#' + divname).show();
@@ -43,18 +42,17 @@ $(document).ready(function(){
 		}
 		
 		// Regular page navigation
-		// Hide all pages first
 		$('.page').hide();
 		
-		// Load and show the selected page
-		$("#" + divname).load("pages/" + divname + ".html", function(response, status, xhr) {
+		// Load and show the selected page into the correct .page div
+		$("#" + divname + ".page").load("pages/" + divname + ".html", function(response, status, xhr) {
 			if (status == "error") {
 				console.error("Error loading page:", xhr.status, xhr.statusText);
-				$("#" + divname).html("<p>Page failed to load</p>");
+				$("#" + divname + ".page").html("<p>Page failed to load</p>");
 			} else {
 				console.log("Page loaded successfully:", divname);
 			}
-			$("#" + divname).show();
+			$("#" + divname + ".page").show();
 		});
 	});
 });
