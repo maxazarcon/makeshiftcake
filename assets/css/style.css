@@ -3,7 +3,7 @@
 	font-weight:bold;
 }
 body {
-	background-image:url(../../images/dirt.png);
+	background-image:url(../images/dirt.png);
 	background-attachment:fixed;
 	margin:auto;
 }
@@ -11,7 +11,7 @@ body {
 	text-decoration:none;
 }
 #header {
-	background-image:url(../../images/stonebrick.png);
+	background-image:url(../images/stonebrick.png);
 	background-repeat: repeat;
 	border:1px solid black;
 	border-top-right-radius:15px;
@@ -23,13 +23,13 @@ body {
 	margin-top:10px;
 }
 #banner {
-	background-image:url(../../images/header.png);
+	background-image:url(../images/header.png);
 	margin-left: 50px;
 	background-size:contain;
 	float:left;
 	z-index:1;
-	height: inherit;
-	width: inherit;
+	height: 100%;
+	width: 100%;
 	background-repeat:no-repeat;
 }
 #navbar {
@@ -53,46 +53,46 @@ body {
 	display:block;
 }
 #home {
-	background-image:url(../../images/nav/home.png);
+	background-image:url(../images/nav/home.png);
 }
 #home:hover {
-	background-image:url(../../images/hover/home.png);
+	background-image:url(../images/hover/home.png);
 }
 #ranks {
-	background-image:url(../../images/nav/ranks.png);
+	background-image:url(../images/nav/ranks.png);
 }
 #ranks:hover {
-	background-image:url(../../images/hover/ranks.png);
+	background-image:url(../images/hover/ranks.png);
 }
 #rules{
-	background-image:url(../../images/nav/rules.png);
+	background-image:url(../images/nav/rules.png);
 }
 #rules:hover {
-	background-image:url(../../images/hover/rules.png);
+	background-image:url(../images/hover/rules.png);
 }
 #donate{
-	background-image:url(../../images/nav/donate.png);
+	background-image:url(../images/nav/donate.png);
 }
 #donate:hover{
-	background-image:url(../../images/hover/donate.png);
+	background-image:url(../images/hover/donate.png);
 }
 #staff{
-	background-image:url(../../images/nav/staff.png);
+	background-image:url(../images/nav/staff.png);
 }
 #staff:hover{
-	background-image:url(../../images/hover/staff.png);
+	background-image:url(../images/hover/staff.png);
 }
 #about{
-	background-image:url(../../images/nav/about.png);
+	background-image:url(../images/nav/about.png);
 }
 #about:hover{
-	background-image:url(../../images/hover/about.png);
+	background-image:url(../images/hover/about.png);
 }
 #contact{
-	background-image:url(../../images/nav/contact.png);
+	background-image:url(../images/nav/contact.png);
 }
 #contact:hover{
-	background-image:url(../../images/hover/contact.png);
+	background-image:url(../images/hover/contact.png);
 }
 
 #content {
@@ -102,7 +102,7 @@ body {
 	width:760px;
 	border:1px solid black;
 	height:881px;
-	background-image:url(../../images/stonebrick.png);
+	background-image:url(../images/stonebrick.png);
 	background-repeat:repeat;
 }
 #title {
@@ -111,7 +111,7 @@ body {
 	border:1px solid black;
 	width:700px;
 	height:50px;
-	background-image:url(../../images/stone.png);
+	background-image:url(../images/stone.png);
 }
 #title img {
 	margin:auto;
@@ -130,7 +130,7 @@ body {
 	padding-top:75px;
 	height:801px;
 	width:650px;
-	background-image:url(../../images/frame.png);
+	background-image:url(../images/frame.png);
 	background-size: contain;
 	background-repeat:no-repeat;
 	z-index: 0;
@@ -155,7 +155,7 @@ body {
 	margin:auto;
 	margin-top:10px;
 	margin-bottom:10px;
-	background-image:url(../../images/stone.png);
+	background-image:url(../images/stone.png);
 	height:50px;
 	width:900px;
 	text-align:center;
@@ -170,10 +170,19 @@ body {
 	margin-right: 80px;
 	height: 540px;
 	width:500px;
-	padding:inherit;
-	background-image:url(../../images/page.png);
+	padding: 20px;
+	background-image:url(../images/page.png);
 	background-position:bottom;
 }
 .page {
 	display: none;
+}
+.menu {
+	margin-bottom: 20px;
+}
+.menu table {
+	width: 100%;
+}
+.menu td {
+	padding: 10px;
 }
