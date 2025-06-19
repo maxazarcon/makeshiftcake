@@ -17,13 +17,19 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Load initial home page content into the correct .page div
+	// Hide all pages first, then load and show home
+	$('.page').hide();
 	$("#home.page").load("pages/home.html", function(response, status, xhr) {
 		if (status == "error") {
 			console.error("Error loading home page:", xhr.status, xhr.statusText);
 			$("#home.page").html("<p>Home page failed to load</p>");
 		} else {
 			console.log("Home page loaded successfully");
+			$("#home.page").show();
+			// Fallback: if still empty, show a message
+			if (!$("#home.page").html().trim()) {
+				$("#home.page").html("<p>Home page is empty.</p>");
+			}
 		}
 	});
 	
